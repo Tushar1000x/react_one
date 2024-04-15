@@ -1,3 +1,86 @@
-*{
-    background-color: pink;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Single+Day&display=swap');
+
+.left{
+    width: 50%;
+}
+.left img{
+    object-fit: cover;
+}
+.right{
+    display: flex;
+    flex-direction: column;
+width: 50%;    
+justify-content: center;
+align-items: center;
+}
+.right h1{
+    font-family: "Single Day", cursive;
+    font-size: 3rem;
+    color:#72DB73;
+}
+label{
+    color: #b7bab7;
+}
+.check{
+    height: 50px;
+justify-content: center;
+
+}
+button{
+    background-color: #72DB73;
+    font-weight: bolder;
+    color: white;
+    border-color: #72DB73;
+    border-radius: 20px;
+    font-size: 20px;
+    height: 40px;
+    width: 450px;
+    cursor: pointer;
+    margin: 0% 25%;
+}
+span{
+    color: #72DB73;
+    cursor: pointer;
+}
+input[type ="text"],
+input[type ="password"],
+input[type ="tel"],
+input[type ="email"]{
+    padding: 5px 10px;
+    width: 450px;
+    height: 40px;
+    border-radius: 4px;
+    opacity: 30px;
+    background-color: rgba(46, 45, 45, 0.776);
+    font-size: 18px;
+    color: white;
+
+}
+.inputs{
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
+}
+input[type ="checkbox"]{
+   
+    width: 25px;
+    height: 25px;
+
+    
+}
+::placeholder{
+color: #b7bab7;
+}
+
+
+.body{
+    margin: 0;
+  /* background-color: black; */
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+}
+p{
+    margin: 0 25%;
+    width: 50%;
 }
