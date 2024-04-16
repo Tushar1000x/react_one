@@ -2,6 +2,7 @@ import React from 'react'
 import { useState } from 'react';
 import mainImg from '../../assets/main_img1.png';
 import styles from './Registration.module.css';
+import { json } from 'react-router-dom';
 
 
 
@@ -15,18 +16,21 @@ import styles from './Registration.module.css';
  
 
      const handleClick=()=>{
-        if(!name || !userName || !email || !mobile){
+        if(!name || !userName || !email || !mobile || !consent){
            return alert('Fill all the blocks')
         }
         else{
-            console.log(name,userName,email,consent,mobile);
+           localStorage.setItem(
+            "currentUser",
+            JSON.stringify({name,userName,email,consent,mobile}));
         }
+        console.log(JSON.parse(localStorage.getItem("currentUser")));
 };
   return (
   
     <div className={styles.body}>
            <div className={styles.left}>
-              <h1>Discover new things on Superapp</h1>
+              <h1>Discover new things on <br />Superapp</h1>
               <img className={styles.mainImg} src={mainImg} alt="Background_img" />
           </div>
 
@@ -47,7 +51,7 @@ import styles from './Registration.module.css';
                 </div>
               </div>
               <div>
-                <button onClick={handleClick}>SIGN UP</button>
+                <button className={styles.buttons} onClick={handleClick}>SIGN UP</button>
                 <p>By clicking on Sign up. you agree to Superapp <span>Terms and Conditions of Use</span></p>
                 <p>To learn more about how Superapp collects, uses, shares and protects your personal data please head Superapp Privacy Policy</p>
 

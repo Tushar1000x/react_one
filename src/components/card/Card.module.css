@@ -1,0 +1,34 @@
+.card{
+    position: relative;
+    top: 70px;
+    padding: 1px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 200px;
+    border: 0px;
+    border-radius: 20px;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0.1, 1.0);
+    transition: transform 0s;
+}
+.card:hover {
+    transform: scale(1.09); /* Scale up by 5% when hovered over */
+}
+
+.card h2{
+    font-weight: 500;
+    font-size: 25px;
+    margin: 15px;
+    position: relative;
+    left: -40px;
+    color: white;
+}
+.moviecard{
+    margin: 10px 5px;
+    height: 50%;
+    width: 90%;
+    border-radius: 15px;
+   
+}
