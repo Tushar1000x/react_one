@@ -24,7 +24,7 @@ import { json } from 'react-router-dom';
             "currentUser",
             JSON.stringify({name,userName,email,consent,mobile}));
         }
-        console.log(JSON.parse(localStorage.getItem("currentUser")));
+        // console.log(JSON.parse(localStorage.getItem("currentUser")));
 };
   return (
   
