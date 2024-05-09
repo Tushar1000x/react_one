@@ -62,7 +62,7 @@ function Genre() {
     const addGenre=(index)=>{
         const number = parseInt(index);
 
-        if (!selectedGenre.includes(number)) {
+        if (!selectedGenre.includes(number) && selectedGenre.length<4) {
             // If index doesn't exist, add it to selectedGenre
             setSelectedGenre([...selectedGenre, number]);
           }
@@ -71,6 +71,7 @@ function Genre() {
     const handleClick=()=>{
          localStorage.setItem("selectedGenre",JSON.stringify(selectedGenre));
         console.log(selectedGenre);
+        window.location.href='/Homepage';
         // console.log(JSON.parse(localStorage.getItem("selectedGenre")));
     }
 
@@ -86,7 +87,7 @@ function Genre() {
                         <button onClick={()=>removeItem(items)}> <img src={cross} alt="Button" /></button>
                         </div>))}
                     
-                        { selectedGenre.length<3 && <p  className={styles.para}><img src={warning} alt="" /> Minimun 3 category required</p>}
+                        { selectedGenre.length<2 && <p  className={styles.para}><img src={warning} alt="" /> Minimun 2 category required</p>}
        </div>
         </div>
         <div className={styles.Right}>

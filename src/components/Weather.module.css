@@ -1,0 +1,121 @@
+
+.card2{
+    display: flex;
+    flex-direction: column;
+     height: 100%;
+     width: 100%;
+     background-color: #101744;
+     border-radius: 30px;
+     display: flex;
+     overflow: hidden;
+     margin: 0px ;
+ }
+ 
+.dateTime{
+    color: white;
+    font-size: 22px;
+    display: flex;
+  height: 30%;
+    width: 100%;
+    background-color:#FF4ADE;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden;
+  
+}
+
+
+
+.weatherData{
+  height: 70%;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+.condition{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    gap: 15px;
+    margin: 18px 0px 10px 0px;
+}
+.condition h2{
+    margin: 0;
+    margin-left: 5px;
+    font-size: 28px;
+ }
+.condition img{
+    height: 80%;
+    margin: -20px;
+}
+.temp{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    gap: 10px;
+    margin: 20px 0px 10px 0px;
+}
+.temp h4{
+    margin: 0;
+   font-size: 18px;
+}
+.temp h2{
+    margin: 0;
+    font-size: 45px;
+}
+
+.wind{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    gap: 10px;
+    margin: 25px 0px 10px 0px;
+}
+    
+.wind h4{
+    margin: 0;
+   font-size: 18px;
+}
+.wind h2{
+    margin: 0;
+    font-size: 18px;
+}
+.humid1{
+    display: flex;
+    gap: 20px;
+}
+.wind1{
+    display: flex;
+    gap: 10px;
+}
+.wind1 img{
+    height: 40px;
+}
+.humid1 img{
+    height: 30px;
+}
+.temp1{
+    display: flex;
+    gap: 20px;
+}
+.temp1 img{
+    height: 40px;
+}
+
+.verticalLine {
+    width: 3px;
+    height: 100px; /* Adjust height as needed */
+    background-color: white; /* Adjust color as needed */
+    margin: 30px -90px; /* Adjust margin as needed */
+  }
+  .right{
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,68 @@
+
+.container {
+  background-color: black;
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 30px 30px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "userWidget notes NewsApi"
+      "userWidget notes NewsApi"
+      "weatherApi notes NewsApi"
+      "stopWatch stopWatch NewsApi"
+      "stopWatch stopWatch NewsApi";
+  }
+.userWidget {
+    background-color: aqua;
+    grid-area: userWidget;
+    border-radius: 30px;
+  }
+.weatherApi {
+    background-color: bisque;
+     grid-area: weatherApi;
+     border-radius: 30px; }
+.stopWatch {
+    background-color: 
+    #1E2343;
+    grid-area: stopWatch;
+    border-radius: 30px;
+    overflow: hidden;
+  }
+.notes {
+    overflow: hidden;
+    border-radius: 30px;
+    background-color: blue;
+    grid-area: notes;
+  }
+  .NewsApi {
+    background-color: cadetblue;
+    border-radius: 30px;
+    grid-area: NewsApi;
+    width: 100px;
+    
+  }
+  
+  .right{
+    border-radius: 30px;
+    grid-area: NewsApi;
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    justify-content: center;
+    align-items: center;
+}
+.Suggestions{
+  position: absolute;
+  bottom: 20px;
+  right: 65px;
+  background-color: rgb(75, 2, 138);
+  border-radius: 50px;
+  width: 360px;
+  height: 40px;
+  font-size: 25px;
+  color: white;
+  font-weight: 500;
+}

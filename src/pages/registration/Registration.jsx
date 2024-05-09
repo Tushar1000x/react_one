@@ -23,7 +23,9 @@ import { json } from 'react-router-dom';
            localStorage.setItem(
             "currentUser",
             JSON.stringify({name,userName,email,consent,mobile}));
+           
         }
+        window.location.href = '/Genre';
         // console.log(JSON.parse(localStorage.getItem("currentUser")));
 };
   return (
